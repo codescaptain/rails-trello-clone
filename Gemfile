@@ -28,6 +28,7 @@ group :development, :test do
   gem "faker"
   gem "pry-rails"
   gem 'rspec-rails', '~> 6.0.0'
+  gem 'byebug'
 end
 
 group :development do
