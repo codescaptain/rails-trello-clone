@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BoardsController < ApplicationController
   before_action :authenticate_user!
 
@@ -5,6 +7,5 @@ class BoardsController < ApplicationController
     @board = Board.new
   end
 
-  def create
-  end
+  def create; end
 end
