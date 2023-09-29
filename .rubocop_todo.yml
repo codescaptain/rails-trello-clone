@@ -33,13 +33,13 @@ Style/Documentation:
     - 'spec/**/*'
     - 'app/controllers/boards_controller.rb'
     - 'app/controllers/home_controller.rb'
-    - 'app/helpers/application_helper.rb'
+    - 'app/helpers/**'
     - 'app/mailers/application_mailer.rb'
     - 'app/models/application_record.rb'
     - 'app/models/board.rb'
     - 'app/models/user.rb'
     - 'config/application.rb'
-    - 'db/**/*'
+    - 'db/**/**'
 
 
 # Offense count: 1
@@ -47,6 +47,18 @@ Style/Documentation:
 Style/IfUnlessModifier:
   Exclude:
     - 'bin/bundle'
+    - 'db/**/**'
+
+Style/StringLiterals:
+  Exclude:
+    - 'db/**/**'
+Style/NumericLiterals:
+  Exclude:
+    - 'db/**/**'
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - 'db/**/**'
 
 # Offense count: 3
 # This cop supports safe autocorrection (--autocorrect).
