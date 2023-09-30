@@ -6,6 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.4'
 
 gem 'bootsnap', require: false
+gem 'bugsnag', '~> 6.26'
 gem 'devise'
 gem 'importmap-rails'
 gem 'jbuilder'
@@ -49,7 +50,6 @@ group :development do
 end
 
 group :test do
+  gem 'rails-controller-testing'
   gem 'shoulda-matchers', '~> 5.0'
 end
-
-gem 'bugsnag', '~> 6.26'
