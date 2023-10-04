@@ -33,6 +33,7 @@ Style/Documentation:
     - 'spec/**/*'
     - 'app/controllers/boards_controller.rb'
     - 'app/controllers/home_controller.rb'
+    - 'app/controllers/dashboards_controller.rb'
     - 'app/helpers/**'
     - 'app/mailers/application_mailer.rb'
     - 'app/models/application_record.rb'
@@ -52,13 +53,26 @@ Style/IfUnlessModifier:
 Style/StringLiterals:
   Exclude:
     - 'db/**/**'
+    - 'spec/**/**'
 Style/NumericLiterals:
   Exclude:
     - 'db/**/**'
-
 Style/FrozenStringLiteralComment:
   Exclude:
     - 'db/**/**'
+    - 'spec/**/**'
+Style/SymbolArray:
+  Exclude:
+    - 'db/**/**'
+    - 'spec/**/**'
+Style/HashSyntax:
+  Exclude:
+    - 'db/**/**'
+    - 'spec/**/**'
+Layout/EmptyLinesAroundBlockBody:
+  Exclude:
+    - 'db/**/**'
+    - 'spec/**/**'
 
 # Offense count: 3
 # This cop supports safe autocorrection (--autocorrect).
