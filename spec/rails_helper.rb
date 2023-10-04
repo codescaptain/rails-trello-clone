@@ -63,6 +63,15 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
   config.include Devise::Test::IntegrationHelpers, type: :request
+  config.include Devise::Test::IntegrationHelpers, type: :controller
+
+  RSpec.configure do |config|
+    [:controller, :view, :request].each do |type|
+      config.include ::Rails::Controller::Testing::TestProcess, :type => type
+      config.include ::Rails::Controller::Testing::TemplateAssertions, :type => type
+      config.include ::Rails::Controller::Testing::Integration, :type => type
+    end
+  end
 
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|
