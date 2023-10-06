@@ -2,6 +2,7 @@
 
 class BoardsController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_board, only: [:edit]
 
   def new
     @board = Board.new
@@ -16,7 +17,15 @@ class BoardsController < ApplicationController
     end
   end
 
+  def edit
+    authorize @board
+  end
+
   private
+
+  def set_board
+    @board = Board.find(params[:id])
+  end
 
   def board_params
     params.require(:board).permit(:name)

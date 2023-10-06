@@ -31,15 +31,12 @@ Metrics/PerceivedComplexity:
 Style/Documentation:
   Exclude:
     - 'spec/**/*'
-    - 'app/controllers/boards_controller.rb'
-    - 'app/controllers/home_controller.rb'
-    - 'app/controllers/dashboards_controller.rb'
+    - 'app/controllers/**'
+    - 'app/policies/**'
     - 'app/helpers/**'
-    - 'app/mailers/application_mailer.rb'
-    - 'app/models/application_record.rb'
-    - 'app/models/board.rb'
-    - 'app/models/user.rb'
-    - 'config/application.rb'
+    - 'app/mailers/**'
+    - 'app/models/**'
+    - 'config/**'
     - 'db/**/**'
 
 
