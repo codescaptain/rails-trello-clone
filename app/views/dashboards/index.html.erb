@@ -13,7 +13,7 @@
               <%= link_to 'Edit', edit_board_path(board), class: 'w-full min-h-full' %>
             </div>
             <div class="p-4">
-              <a class="w-full min-h-full" href="#">Delete</a>
+              <%= link_to 'Delete', board_path(board), data: {"turbo-method": :delete}, class: 'w-full min-h-full' %>
             </div>
           </div>
         </div>

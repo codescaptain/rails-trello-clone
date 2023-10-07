@@ -2,7 +2,7 @@
 
 class BoardsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_board, only: %i[edit update]
+  before_action :set_board, only: %i[edit update destroy]
 
   def new
     @board = Board.new
@@ -28,6 +28,12 @@ class BoardsController < ApplicationController
 
   def edit
     authorize @board
+  end
+
+  def destroy
+    authorize @board
+    @board.destroy
+    redirect_to root_path
   end
 
   private
