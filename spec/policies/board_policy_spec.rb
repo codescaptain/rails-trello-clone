@@ -6,12 +6,14 @@ RSpec.describe BoardPolicy, type: :policy do
 
   subject { described_class }
 
-  it 'grants access if user owns the board' do
-    expect(subject.new(user, board).edit?).to be true
-  end
+  permissions :update?, :edit? do
+    it "denies access if the user does not own the board" do
+      other_user = FactoryBot.create(:user)
+      expect(subject).not_to permit(other_user, board)
+    end
 
-  it 'denies access if user does not own the board' do
-    other_user = FactoryBot.create(:user)
-    expect(subject.new(other_user, board).edit?).to be false
+    it "accepts access if the user owns the board" do
+      expect(subject).to permit(user, board)
+    end
   end
 end
