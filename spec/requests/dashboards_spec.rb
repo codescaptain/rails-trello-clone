@@ -17,7 +17,7 @@ RSpec.describe 'Dashboards', type: :request do
 
     it 'should return all boards' do
       get '/dashboards'
-      expect(assigns['boards'].pluck(:id)).to eq(boards.pluck(:id))
+      expect(assigns['boards'].pluck(:id)).to eq(boards.pluck(:id).reverse)
     end
   end
 

@@ -32,7 +32,7 @@ RSpec.describe 'Boards', type: :request do
         end.not_to(change { Board.count })
       end
 
-      it 'should redirect to root path' do
+      it 'should render new template' do
         post '/boards', params: { board: invalid_board }
         expect(response).to render_template(:new)
       end

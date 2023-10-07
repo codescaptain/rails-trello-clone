@@ -2,7 +2,7 @@
 
 class BoardsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_board, only: [:edit]
+  before_action :set_board, only: %i[edit update]
 
   def new
     @board = Board.new
@@ -14,6 +14,15 @@ class BoardsController < ApplicationController
       redirect_to root_path
     else
       render :new
+    end
+  end
+
+  def update
+    authorize @board
+    if @board.update(board_params)
+      redirect_to root_path
+    else
+      render :edit
     end
   end
 
