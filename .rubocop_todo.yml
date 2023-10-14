@@ -46,30 +46,37 @@ Style/IfUnlessModifier:
   Exclude:
     - 'bin/bundle'
     - 'db/**/**'
+    - 'config/**'
 
 Style/StringLiterals:
   Exclude:
     - 'db/**/**'
     - 'spec/**/**'
+    - 'config/**'
 Style/NumericLiterals:
   Exclude:
     - 'db/**/**'
+    - 'config/**'
 Style/FrozenStringLiteralComment:
   Exclude:
     - 'db/**/**'
     - 'spec/**/**'
+    - 'config/**'
 Style/SymbolArray:
   Exclude:
     - 'db/**/**'
     - 'spec/**/**'
+    - 'config/**'
 Style/HashSyntax:
   Exclude:
     - 'db/**/**'
     - 'spec/**/**'
+    - 'config/**'
 Layout/EmptyLinesAroundBlockBody:
   Exclude:
     - 'db/**/**'
     - 'spec/**/**'
+    - 'config/**'
 
 # Offense count: 3
 # This cop supports safe autocorrection (--autocorrect).
