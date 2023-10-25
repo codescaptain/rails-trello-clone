@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :list do
-    board { nil }
-    title { "MyString" }
-    class_list { "MyString" }
+    association :board
+    sequence(:title) { |t| "My Title #{t}" }
+    sequence(:class_list) { |t| "my_class#{t}" }
   end
 end
