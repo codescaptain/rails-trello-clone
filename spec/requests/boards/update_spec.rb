@@ -17,6 +17,7 @@ RSpec.describe 'Boards', type: :request do
       end
 
       it 'should update the board' do
+        board.reload
         expect(board.name).to eq(valid_board[:name])
       end
 
