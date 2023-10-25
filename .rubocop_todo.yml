@@ -32,6 +32,8 @@ Style/Documentation:
   Exclude:
     - 'spec/**/*'
     - 'app/controllers/**'
+    - 'app/controllers/api/**'
+    - 'app/serializers/**'
     - 'app/policies/**'
     - 'app/helpers/**'
     - 'app/mailers/**'

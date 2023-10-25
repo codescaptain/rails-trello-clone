@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :board do
-    name { 'MyString' }
+    sequence(:name) { |t| "Name #{t}" }
     association :user
   end
 end
