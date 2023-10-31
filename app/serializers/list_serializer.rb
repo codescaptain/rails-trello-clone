@@ -2,5 +2,5 @@
 
 class ListSerializer
   include JSONAPI::Serializer
-  attributes :board_id, :title, :class_list
+  attributes :board_id, :title, :class_list, :items
 end
