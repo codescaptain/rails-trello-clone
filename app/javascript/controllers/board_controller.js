@@ -1,7 +1,13 @@
 import {Controller} from '@hotwired/stimulus'
+import axios from  'axios'
 
 export default class extends Controller {
     connect() {
+        axios.get('/api/boards/1/lists')
+            .then(function (response) {
+                console.log(response.data)
+            })
+
         const boards = [
             {
                 "id": "board-id-1",
