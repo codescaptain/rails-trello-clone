@@ -66,7 +66,7 @@ export default class extends Controller {
     }
 
     connect() {
-        axios.get('/api/boards/1/lists')
+        axios.get(this.element.dataset.apiUrl)
             .then((response) => {
                 const boards = this.buildBoards(response['data']['data']);
                 this.createJkanban(boards)
