@@ -1,0 +1,7 @@
+<button type="button" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">
+  <% if defined?(@board) && !@board[:id].nil? %>
+    <span><%= link_to " + List", new_board_list_path(@board) %></span>
+  <% else %>
+    <span><%= link_to " + Board", new_board_path %></span>
+  <% end %>
+</button>

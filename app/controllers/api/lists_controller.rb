@@ -5,7 +5,7 @@ module Api
     before_action :set_board, only: :index
 
     def index
-      render json: ListSerializer.new(@board.lists).serializable_hash.to_json
+      render json: ListSerializer.new(@board.lists).serializable_hash.to_json, status: 200
     end
 
     private
