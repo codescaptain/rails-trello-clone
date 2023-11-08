@@ -20,26 +20,16 @@
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <% if user_signed_in? %>
-              <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
-              <%= link_to "Sign Out", destroy_user_session_path, class: "block px-4 py-2 text-sm text-gray-700", data: { turbo_method: :delete } %>
-            <% end %>
+            <%= render 'shared/header/sign_out_button' %>
           </div>
         </div>
       </div>
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
         <% if user_signed_in? %>
-          <button type="button" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">
-            <span><%= link_to " + Board", new_board_path %></span>
-          </button>
-
-
+          <%= render 'shared/header/header_new_path_button' %>
           </div>
         <% else %>
-          <div class="flex-shrink-0 ml-4 flec items-center">
-            <%= link_to "Register", new_user_registration_path, class: "link" %>
-            <%= link_to "Login", new_user_session_path, class: "ml-3 link" %>
-          </div>
+          <%= render 'shared/header/sign_in_and_up_buttons' %>
         <% end %>
         </div>
   </div>

@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   get 'dashboards', to: 'dashboards#index'
   devise_for :users
   root 'home#index'
-  resources :boards, only: %i[new create edit update destroy show]
+  resources :boards do
+    resources :lists
+  end
 
   namespace :api do
     resources :boards do
