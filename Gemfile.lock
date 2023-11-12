@@ -83,6 +83,10 @@ GEM
     coderay (1.1.3)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
+    database_consistency (1.7.22)
+      activerecord (>= 3.2)
+    database_validations (1.1.1)
+      activerecord (>= 4.2.0)
     date (3.3.3)
     debug (1.8.0)
       irb (>= 1.5.0)
@@ -307,6 +311,8 @@ DEPENDENCIES
   bugsnag (~> 6.26)
   bundler-audit
   byebug
+  database_consistency
+  database_validations
   debug
   devise
   factory_bot_rails
