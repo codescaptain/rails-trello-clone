@@ -26,7 +26,7 @@ RSpec.describe 'Boards', type: :request do
     end
 
     context 'params are invalid' do
-      it 'should change Board count' do
+      it 'should not change Board count' do
         expect do
           post '/boards', params: { board: invalid_board }
         end.not_to(change { Board.count })
