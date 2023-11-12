@@ -30,6 +30,8 @@ group :development, :test do
   gem 'brakeman'
   gem 'bundler-audit'
   gem 'byebug'
+  gem 'database_consistency'
+  gem 'database_validations'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
   gem 'faker'

@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 class Board < ApplicationRecord
-  belongs_to :user
+  db_belongs_to :user
   has_many :lists, dependent: :destroy
 
-  validates :name, presence: true
+  validates :name, db_presence: true
 end
