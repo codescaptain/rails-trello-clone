@@ -16,7 +16,7 @@ export default class extends Controller {
             return {
                 'id': get(board, 'id'),
                 'title': get(board, 'attributes.title'),
-                'class': this.isEmpty(get(board, 'attributes.class_list')),
+                'class': this.isEmpty(get(board, 'attributes.class_list')) + ",edit-page",
                 'item': get(board, 'attributes.items')
             }
         });
@@ -32,7 +32,7 @@ export default class extends Controller {
             boards: boards,
             dragBoards: true,
             itemAddOptions: {
-                enabled: false,
+                enabled: true,
                 content: '+',
                 class: 'kanban-title-button btn btn-default btn-xs',
                 footer: false
@@ -65,11 +65,24 @@ export default class extends Controller {
         });
     }
 
+    addEditLinkToList(board_url) {
+        let lists = document.getElementsByClassName("edit-page")
+        let listsArray = Array.from(lists)
+        listsArray.forEach(function (list) {
+            list.addEventListener("click", (e) => {
+                const list_id = list.parentElement.dataset.id
+                Turbo.visit(`${board_url}/lists/${list_id}/edit`)
+            })
+        })
+    }
+
+
     connect() {
         axios.get(this.element.dataset.apiUrl)
             .then((response) => {
                 const boards = this.buildBoards(response['data']['data']);
                 this.createJkanban(boards)
+                this.addEditLinkToList(this.element.dataset.ctUrl)
             });
     }
 }
