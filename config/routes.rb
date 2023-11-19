@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     devise_for :users,
                skip: [:registrations],
                controllers: {
-                 sessions: 'api/users/sessions',
+                 sessions: 'api/users/sessions'
                }
 
     resources :boards do

@@ -33,6 +33,7 @@ Style/Documentation:
     - 'spec/**/*'
     - 'app/controllers/**'
     - 'app/controllers/api/**'
+    - 'app/controllers/api/users/**'
     - 'app/serializers/**'
     - 'app/policies/**'
     - 'app/helpers/**'
@@ -74,6 +75,7 @@ Style/HashSyntax:
     - 'db/**/**'
     - 'spec/**/**'
     - 'config/**'
+    - 'app/models/**'
 Layout/EmptyLinesAroundBlockBody:
   Exclude:
     - 'db/**/**'
