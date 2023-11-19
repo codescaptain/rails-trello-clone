@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Api
-  class ListsController < ApplicationController
+  class ListsController < Api::ApplicationController
     before_action :set_board, only: :index
 
     def index
