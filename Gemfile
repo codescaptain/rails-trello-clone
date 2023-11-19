@@ -5,15 +5,18 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.4'
 
+gem 'bcrypt'
 gem 'bootsnap', require: false
 gem 'bugsnag', '~> 6.26'
 gem 'devise'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'jsonapi-serializer'
+gem 'jwt'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'pundit'
+gem 'rack-cors'
 gem 'rails', '~> 7.0.7', '>= 7.0.7.2'
 gem 'redis', '~> 4.0'
 gem 'sassc-rails'

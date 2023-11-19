@@ -1,11 +1,15 @@
 # frozen_string_literal: true
 
 module Api
-  class ListsController < ApplicationController
+  class ListsController < Api::ApplicationController
     before_action :set_board, only: :index
 
     def index
-      render json: ListSerializer.new(@board.lists).serializable_hash.to_json, status: 200
+      if signed_in?
+        render json: ListSerializer.new(@board.lists).serializable_hash.to_json, status: 200
+      else
+        render json: { data: [] }, status: 204
+      end
     end
 
     private

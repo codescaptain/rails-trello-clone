@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   end
 
   namespace :api do
+    devise_for :users,
+               skip: [:registrations],
+               controllers: {
+                 sessions: 'api/users/sessions'
+               }
+
     resources :boards do
       resources :lists, only: :index, controller: 'lists'
     end
