@@ -2,8 +2,8 @@
 
 class ListsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_board, only: %i[new create edit]
-  before_action :set_list, only: %i[edit]
+  before_action :set_board, only: %i[new create edit update]
+  before_action :set_list, only: %i[edit update]
 
   def new
     @list = @board.lists.new
@@ -17,6 +17,14 @@ class ListsController < ApplicationController
       redirect_to board_path(@board)
     else
       render :new
+    end
+  end
+
+  def update
+    if @list.update(list_params)
+      redirect_to board_path(@board)
+    else
+      redirect_to root_path
     end
   end
 

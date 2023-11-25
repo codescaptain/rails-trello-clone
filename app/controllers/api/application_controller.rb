@@ -3,7 +3,6 @@
 module Api
   class ApplicationController < ActionController::API
     respond_to :json
-    before_action :process_token
 
     def authenticate_user!(_options = {})
       head :unauthorized unless signed_in?
