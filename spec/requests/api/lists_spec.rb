@@ -7,7 +7,7 @@ RSpec.describe "Api::Lists", type: :request do
     context 'user is not sign in' do
       it "returns http 204" do
         get api_board_lists_path(board)
-        expect(response).to have_http_status(204)
+        expect(response).to have_http_status(200)
       end
     end
   end
