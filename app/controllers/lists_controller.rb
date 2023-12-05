@@ -2,8 +2,8 @@
 
 class ListsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_board, only: %i[new create edit]
-  before_action :set_list, only: %i[edit]
+  before_action :set_board, only: %i[new create edit destroy]
+  before_action :set_list, only: %i[edit destroy]
 
   def new
     @list = @board.lists.new
@@ -14,6 +14,14 @@ class ListsController < ApplicationController
   def create
     @list = @board.lists.new(list_params)
     if @list.save
+      redirect_to board_path(@board)
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    if @list.destroy
       redirect_to board_path(@board)
     else
       render :new

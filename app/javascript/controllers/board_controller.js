@@ -81,6 +81,7 @@ export default class extends Controller {
         axios.get(this.element.dataset.apiUrl)
             .then((response) => {
                 const boards = this.buildBoards(response['data']['data']);
+                console.log(boards)
                 this.createJkanban(boards)
                 this.addEditLinkToList(this.element.dataset.ctUrl)
             });
