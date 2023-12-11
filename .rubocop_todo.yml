@@ -35,6 +35,7 @@ Style/Documentation:
     - 'app/controllers/api/**'
     - 'app/controllers/api/users/**'
     - 'app/serializers/**'
+    - 'app/services/**/*'
     - 'app/policies/**'
     - 'app/helpers/**'
     - 'app/mailers/**'
