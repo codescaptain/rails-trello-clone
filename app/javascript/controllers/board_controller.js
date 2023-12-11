@@ -51,13 +51,20 @@ export default class extends Controller {
             dragEl: function (el, source) {
             },
             dragendEl: function (el) {
-                console.log(el)
             },
             dropEl: function (el, target, source, sibling) {
             },
             dragBoard: function (el, source) {
             },
-            dragendBoard: function (el) {
+            dragendBoard: (el) => {
+                axios.put(`${this.element.dataset.apiUrl}/${el.dataset.id}`, {
+                    position: el.dataset.order - 1,
+                }).then((response) => {
+                    console.log(response.data);
+                }).catch((error) => {
+                    console.error(error);
+                });
+
             },
             buttonClick: function (el, boardId) {
             },
