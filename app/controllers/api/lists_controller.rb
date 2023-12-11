@@ -2,10 +2,15 @@
 
 module Api
   class ListsController < Api::ApplicationController
-    before_action :set_board, only: :index
+    before_action :set_board, only: [:index, :update]
 
     def index
-      render json: ListSerializer.new(@board.lists).serializable_hash.to_json, status: 200
+      render json: ListSerializer.new(@board.lists.order(:position)).serializable_hash.to_json, status: 200
+    end
+
+    def update
+      @lists = @board.lists
+      ::Api::ListSortingService.new(@lists, params, @lists.find(params[:id]).position).call
     end
 
     private
