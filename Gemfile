@@ -5,6 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.4'
 
+gem 'activerecord-import'
 gem 'bcrypt'
 gem 'bootsnap', require: false
 gem 'bugsnag', '~> 6.26'

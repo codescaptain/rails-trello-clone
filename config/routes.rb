@@ -17,7 +17,8 @@ Rails.application.routes.draw do
                }
 
     resources :boards do
-      resources :lists, only: %i[index update], controller: 'lists'
+      resources :lists, only: %i[index], controller: 'lists'
+      resources :list_positions, only: %i[index update], controller: 'list_positions'
     end
   end
 end
