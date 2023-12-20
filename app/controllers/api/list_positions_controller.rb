@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 module Api
   class ListPositionsController < Api::ApplicationController
-    before_action :set_board, only: %i[ update]
+    before_action :set_board, only: %i[update]
 
     def update
       @lists = @board.lists
