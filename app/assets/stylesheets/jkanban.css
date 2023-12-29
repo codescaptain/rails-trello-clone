@@ -48,6 +48,7 @@
 
 .kanban-board header .kanban-title-button {
     float: right;
+    cursor: pointer;
 }
 
 .kanban-board .kanban-drag {
