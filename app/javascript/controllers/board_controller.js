@@ -44,18 +44,6 @@ export default class extends Controller {
                 customCssIconHandler: "drag_handler_icon",
                 customHandler: "<span class='item_handle'>+</span> %title% "
             },
-            click: function (el) {
-            },
-            context: function (el, event) {
-            },
-            dragEl: function (el, source) {
-            },
-            dragendEl: function (el) {
-            },
-            dropEl: function (el, target, source, sibling) {
-            },
-            dragBoard: function (el, source) {
-            },
             dragendBoard: (el) => {
                 axios.put(`${this.element.dataset.positionUrl}/${el.dataset.id}`, {
                     position: el.dataset.order - 1,
@@ -67,17 +55,19 @@ export default class extends Controller {
 
             },
             buttonClick: function (el, boardId) {
+                Turbo.visit(`/lists/${boardId}/items/new`)
+
             },
             propagationHandlers: [],
         });
     }
 
     addEditLinkToList(board_url) {
-        let lists = document.getElementsByClassName("edit-page")
+        let lists = document.getElementsByClassName("kanban-title-board")
         let listsArray = Array.from(lists)
         listsArray.forEach(function (list) {
             list.addEventListener("click", (e) => {
-                const list_id = list.parentElement.dataset.id
+                const list_id = list.parentElement.parentElement.dataset.id
                 Turbo.visit(`${board_url}/lists/${list_id}/edit`)
             })
         })

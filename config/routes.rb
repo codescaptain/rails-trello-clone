@@ -9,6 +9,10 @@ Rails.application.routes.draw do
     resources :lists
   end
 
+  resources :lists do
+    resources :items
+  end
+
   namespace :api do
     devise_for :users,
                skip: [:registrations],
