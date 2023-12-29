@@ -10,12 +10,9 @@ class ItemsController < ApplicationController
 
   def create
     @item = @list.items.new(item_params)
+    @item.save
 
-    if @item.save
-      redirect_to board_path(@list.board)
-    else
-      redirect_to board_path(@list.board)
-    end
+    redirect_to board_path(@list.board)
   end
 
   private
@@ -27,5 +24,4 @@ class ItemsController < ApplicationController
   def item_params
     params.require(:item).permit(:title, :description)
   end
-
 end
