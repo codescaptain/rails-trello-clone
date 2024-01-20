@@ -1,6 +1,8 @@
 ---
 tr:
+  hello_world: Merhaba Dünya
   customer: Müşteri
-  hello: Merhaba Dünya.
+  hello: Merhaba
   the_end_of_the_story: Hikayenin Sonu
-  the_test_key: Test Key'i
+  the_test_key: Test key'i
+  research: Araştırma
