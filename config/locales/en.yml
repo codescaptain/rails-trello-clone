@@ -8,5 +8,6 @@ en:
   research: Research
   flower: Flower
   rose: Rose
-  money: 
-  book: 
+  money: null
+  book: null
+  example: Example
