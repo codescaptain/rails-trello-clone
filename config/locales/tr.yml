@@ -23,4 +23,7 @@ tr:
   done: Tamamlandı
   not_found: Bulunamadı 2
   a_cup_of_tea: Bir bardak çay 3
+  mobile:
+    one: Telefon
+    other: Telefonlar
 ...
