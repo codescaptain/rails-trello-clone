@@ -26,12 +26,14 @@ tr:
   mobile:
     one: Telefon
     other: Telefonlar
-  man: 
+  man:
     one: man
     other: men
-  woman: 
+  woman:
     one: Kadın
     other: Kadınlar
   boy: Çocuk
   button: Buton
   love: Aşk
+  warlock: Kara büyücü
+  wizard: Büyücü
