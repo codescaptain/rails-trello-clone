@@ -26,3 +26,6 @@ tr:
   mobile:
     one: Telefon
     other: Telefonlar
+  man: 
+    one: man
+    other: men
