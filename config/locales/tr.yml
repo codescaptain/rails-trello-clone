@@ -1,24 +1,24 @@
 ---
 tr:
-  hello_world: Merhaba Dünya
-  customer: Müşteri
-  hello: Merhaba
-  the_end_of_the_story: Hikayenin Sonu
-  the_test_key: Test key'i
-  research: Araştırma
-  flower: Çiçek
-  rose: Gül
-  money: Para
-  book: Kitap
-  example: Örnek
-  an apple: 
-    one: Elma
-    other: Elmalar
-  chair: 
-    one: sandalye
-    other: sandalyeler
+  hello_world: 'Merhaba Dünya'
+  customer: 'Müşteri'
+  hello: 'Merhaba'
+  the_end_of_the_story: 'Hikayenin Sonu'
+  the_test_key: 'Test key'i'
+  research: 'Araştırma'
+  flower: 'Çiçek'
+  rose: 'Gül'
+  money: 'Para'
+  book: 'Kitap'
+  example: 'Örnek'
+  an apple:
+    one: 'Elma'
+    other: 'Elmalar'
+  chair:
+    one: 'sandalye'
+    other: 'sandalyeler'
   phone:
-    one: Telefon
-    other: Telefonlar
-  done: Tamamlandı
-  not_found: Bulunamadı
+    one: 'Telefon'
+    other: 'Telefonlar'
+  done: 'Tamamlandı'
+  not_found: 'Bulunamadı'
