@@ -11,14 +11,14 @@ tr:
   money: Para
   book: Kitap
   example: Örnek
-  an apple: 
+  an apple:
     one: Elma
     other: Elmalar
-  chair: 
+  chair:
     one: sandalye
     other: sandalyeler
   phone:
     one: Telefon
     other: Telefonlar
   done: Tamamlandı
-  not_found: Bulunamadı
+  not_found: Bulunamadı 2
