@@ -17,6 +17,7 @@ en:
   chair:
     one: a chair
     other: chairs
-  phone: 
+  phone:
     one: phone
     other: phones
+  done: Done
