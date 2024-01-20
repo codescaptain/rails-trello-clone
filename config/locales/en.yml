@@ -11,3 +11,14 @@ en:
   money: Money
   book: Book
   example: Example
+  an apple:
+    one: An apple
+    other: Apples
+  chair:
+    one: a chair
+    other: chairs
+  phone:
+    one: phone
+    other: phones
+  done: Done
+  not_found: Not found
