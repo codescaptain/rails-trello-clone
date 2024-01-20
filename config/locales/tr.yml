@@ -11,3 +11,6 @@ tr:
   money: Para
   book: Kitap
   example: Örnek
+  an apple: 
+    one: Elma
+    other: Elmalar
