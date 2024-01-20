@@ -21,3 +21,4 @@ tr:
     one: Telefon
     other: Telefonlar
   done: Tamamlandı
+  not_found: Bulunamadı
