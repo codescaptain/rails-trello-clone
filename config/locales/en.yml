@@ -11,3 +11,6 @@ en:
   money: Money
   book: Book
   example: Example
+  an apple: 
+    one: An apple
+    other: Apples
