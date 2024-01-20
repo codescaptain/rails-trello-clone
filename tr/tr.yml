@@ -1,0 +1,26 @@
+---
+tr:
+  hello: Merhaba Dünya.
+  the_end_of_the_story: Hikayenin Sonu
+  the_test_key: Test Key'i
+  customer: Müşteri
+  hello_world: Merhaba Dünya
+  research: Araştırma
+  flower: Çiçek
+  rose: Gül
+  money: Para
+  book: Kitap
+  example: Örnek
+  an apple:
+    one: Elma
+    other: Elmalar
+  chair:
+    one: sandalye
+    other: sandalyeler
+  phone:
+    one: Telefon
+    other: Telefonlar
+  done: Tamamlandı
+  not_found: Bulunamadı 2
+  a_cup_of_tea: Bir bardak çay 2
+...

@@ -1,0 +1,26 @@
+---
+en:
+  hello: Hello world
+  the_end_of_the_story: End of the story
+  the_test_key: Test Key
+  customer: Customer
+  hello_world: Hello World
+  research: Research
+  flower: Flower
+  rose: Rose
+  money: Money
+  book: Book
+  example: Example
+  an apple:
+    one: An apple
+    other: Apples
+  chair:
+    one: a chair
+    other: chairs
+  phone:
+    one: phone
+    other: phones
+  done: Done
+  not_found: Not found
+  a_cup_of_tea: A cup of tea 2
+...
