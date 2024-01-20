@@ -26,3 +26,6 @@ en:
   mobile:
     one: A mobile
     other: Mobiles
+  man: 
+    one: man
+    other: men
