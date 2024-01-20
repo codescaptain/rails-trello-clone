@@ -29,3 +29,6 @@ tr:
   man: 
     one: man
     other: men
+  woman: 
+    one: Kadın
+    other: Kadınlar
