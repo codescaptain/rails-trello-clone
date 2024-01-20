@@ -14,3 +14,6 @@ tr:
   an apple: 
     one: Elma
     other: Elmalar
+  chair: 
+    one: sandalye
+    other: sandalyeler
