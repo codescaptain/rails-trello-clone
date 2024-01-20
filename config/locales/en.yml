@@ -11,9 +11,12 @@ en:
   money: Money
   book: Book
   example: Example
-  an apple: 
+  an apple:
     one: An apple
     other: Apples
-  chair: 
+  chair:
     one: a chair
     other: chairs
+  phone: 
+    one: phone
+    other: phones
