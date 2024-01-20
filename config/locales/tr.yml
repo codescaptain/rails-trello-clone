@@ -17,6 +17,7 @@ tr:
   chair:
     one: sandalye
     other: sandalyeler
-  phone: 
+  phone:
     one: Telefon
     other: Telefonlar
+  done: Tamamlandı
