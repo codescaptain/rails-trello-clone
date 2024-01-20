@@ -29,3 +29,6 @@ en:
   man: 
     one: man
     other: men
+  woman: 
+    one: woman
+    other: women
