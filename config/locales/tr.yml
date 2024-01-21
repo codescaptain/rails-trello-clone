@@ -45,3 +45,6 @@ tr:
   casdd: 'casdd2'
   dsadasd: "dsadasd2"
   the_user_win: 'Kullanıcı kazan'
+  user:
+    one: 'Kullanıcı'
+    other: 'Kullanıcılar'

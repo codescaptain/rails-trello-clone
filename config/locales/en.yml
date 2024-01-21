@@ -45,3 +45,6 @@ en:
   casdd: 'casdd'
   dsadasd: "dsadasd"
   the_user_win: 'The user win'
+  user:
+    one: 'User'
+    other: 'Users'
