@@ -46,5 +46,5 @@ tr:
   dsadasd: "dsadasd2"
   the_user_win: 'Kullanıcı kazan'
   user:
-    one: ''
-    other: ''
+    one: 'Kullanıcı'
+    other: 'Kullanıcılar'
