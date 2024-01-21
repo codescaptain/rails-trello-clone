@@ -1,46 +1,46 @@
 ---
-en:
-  hello: Hello
-  the_end_of_the_story: the end of the story
-  the_test_key: the test key
-  research: Research
-  flower: Flower
-  rose: Rose
-  money: Money
-  book: Book
-  example: Example
+tr:
+  hello: Merhaba
+  the_end_of_the_story: Hikayenin Sonu
+  the_test_key: Test key'i
+  research: Araştırma
+  flower: Çiçek
+  rose: Gül
+  money: Para
+  book: Kitap
+  example: Örnek
   an apple:
-    one: An apple
-    other: Apples
+    one: Elma
+    other: Elmalar
   chair:
-    one: a chair
-    other: chairs
+    one: sandalye
+    other: sandalyeler
   phone:
-    one: phone
-    other: phones
-  done: Done
-  not_found: Not found
-  a_cup_of_tea: A cup of tea 3
+    one: Telefon
+    other: Telefonlar
+  done: Tamamlandı
+  not_found: Bulunamadı 2
+  a_cup_of_tea: Bir bardak çay 3
   mobile:
-    one: A mobile
-    other: Mobiles
+    one: Telefon
+    other: Telefonlar
   man:
     one: man
     other: men
   woman:
-    one: woman
-    other: women
-  boy: Boy
-  button: Button
-  love: Love
-  warlock: Warlock
-  wizard: Wizard
-  try: Try
-  name: Name
-  you: You
-  coffe: Coffee
-  drink: Drink
+    one: Kadın
+    other: Kadınlar
+  boy: Çocuk
+  button: Buton
+  love: Aşk
+  warlock: Kara büyücü
+  wizard: Büyücü
+  try: Deneme
+  name: İsim
+  you: Sen
+  coffe: Kahve
+  drink: İçmek
   aasdasd: 'aasdasd'
   bsdas: 'bsdas'
   casdd: 'casdd'
-  dsadasd: 'dsadasd'
+  dsadasd: "\ndsadasd"
