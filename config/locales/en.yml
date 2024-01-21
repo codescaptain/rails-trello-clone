@@ -46,5 +46,5 @@ en:
   dsadasd: "dsadasd"
   the_user_win: 'The user win'
   user:
-    one: ''
-    other: ''
+    one: 'User'
+    other: 'Users'
