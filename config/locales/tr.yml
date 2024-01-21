@@ -48,3 +48,4 @@ tr:
   user:
     one: 'Kullanıcı'
     other: 'Kullanıcılar'
+  monkey: ''
